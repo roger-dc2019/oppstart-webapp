@@ -1,33 +1,122 @@
-.App {
-  text-align: center;
+:root {
+	--darkGreen: #007272;
+	--lightGreen: #a4e1d2;
+	--mainDark: #00353d;
+	--mainOrange: #ff5301;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: "", sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* TEXT */
+.darkText {
+	color: var(--mainDark) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.lightText {
+	color: var(--darkGreen) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lightestText {
+	color: var(--lightGreen) !important;
+}
+
+.contrastText {
+	color: var(--mainOrange) !important;
+}
+
+.loggInn {
+	background: url("./assets/img/login.jpg");
+}
+
+.oppstart {
+	color: var(--mainDark);
+}
+
+.getStarted {
+	background: var(--mainDark);
+	height: 100vh;
+}
+
+.dnb-light {
+	background: var(--lightGreen);
+}
+
+.dnb-dark {
+	background: var(--darkGreen);
+}
+
+.card-oppstart {
+	max-width: 18rem;
+}
+
+/* BUTTONS */
+.start-btn {
+	background: var(--mainDark) !important;
+	color: var(--lightGreen) !important;
+	border-radius: 20px !important;
+	z-index: 10;
+	position: absolute;
+	top: 53vh;
+}
+
+.start-btn:hover {
+	background: var(--darkGreen) !important;
+}
+
+.puls-btn {
+	background: var(--mainDark) !important;
+	color: var(--lightGreen) !important;
+	border-radius: 20px !important;
+	z-index: 10;
+	position: absolute;
+	top: 35vh;
+	left: 95%;
+}
+
+.login-btn {
+	background: var(--mainDark) !important;
+	color: var(--lightGreen) !important;
+	border-radius: 20px !important;
+}
+
+.leftPadding {
+	padding-left: 15%;
+}
+
+/* HEIGHTS */
+.h-10vh {
+	height: 10vh !important;
+}
+
+.h-30vh {
+	height: 30vh !important;
+}
+
+.h-45vh {
+	height: 45vh !important;
+}
+
+.h-60vh {
+	height: 60vh !important;
+}
+
+.h-90vh {
+	height: 90vh !important;
+}
+
+/* HORIZONTAL SCROLL */
+.live__scroll {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.live__scroll .row {
+	display: block;
+}
+.live__scroll .live__scroll--box {
+	display: inline-block;
+	float: none;
+	padding: 15px;
 }
