@@ -15,8 +15,8 @@ class Header extends Component {
 									<img src={o_logo} width='140px' alt='Oppstart logo' />
 								</div>
 								<div className='float-left pt-4'>
-									<h1 className='darkText'>StartHub</h1>
-									<h5 className='contrastText'>
+									<h1 className='darkText header-font'>StartHub</h1>
+									<h5 className='contrastText subtitle-font'>
 										Hele Norges markedsplass for oppstartsbedrifter.
 									</h5>
 								</div>

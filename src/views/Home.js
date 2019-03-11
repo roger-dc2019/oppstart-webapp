@@ -18,8 +18,8 @@ class Home extends Component {
 										<img src={dnb_logo} width='350px' alt='DNB logo' />
 									</div>
 									<div class='text-center my-5'>
-										<h1 className='darkText'>O for Oppstart</h1>
-										<h5 className='contrastText'>
+										<h1 className='darkText header-font'>O for Oppstart</h1>
+										<h5 className='contrastText subtitle-text'>
 											For bedrifter som vil ligge ett steg forran.
 										</h5>
 									</div>
@@ -39,31 +39,43 @@ class Home extends Component {
 							<div className='row h-100 justify-content-center align-items-center'>
 								<div className='col-12'>
 									<div className='d-flex justify-content-center'>
-										<div className='card bg-light mb-3 card-oppstart float-left mx-auto'>
-											<div className='card-header'>Bedrift på 5 minutter</div>
+										<div className='card bg-light mb-3 card-oppstart float-left mx-auto shadow-lg'>
+											<div className='card-header subtitle-font'>
+												Start bedrift på 5 minutter
+											</div>
 											<div className='card-body'>
-												<h5 className='card-title'>Light card title</h5>
-												<p className='card-text'>
+												<h5 className='card-title header-font lightText'>
+													Last ned <u>Oppdrift</u>
+												</h5>
+												<p className='card-text darkText'>
 													Some quick example text to build on the card title and
 													make up the bulk of the card's content.
 												</p>
 											</div>
 										</div>
-										<div className='card bg-light mb-3 card-oppstart float-left mx-auto'>
-											<div className='card-header'>Bedrift på 5 minutter</div>
+										<div className='card bg-light mb-3 card-oppstart float-left mx-auto shadow-lg'>
+											<div className='card-header subtitle-font'>
+												Markedsplass for startups
+											</div>
 											<div className='card-body'>
-												<h5 className='card-title'>Light card title</h5>
-												<p className='card-text'>
+												<h5 className='card-title header-font lightText'>
+													Besøk <u>StartHub</u>
+												</h5>
+												<p className='card-text darkText'>
 													Some quick example text to build on the card title and
 													make up the bulk of the card's content.
 												</p>
 											</div>
 										</div>
-										<div className='card bg-light mb-3 card-oppstart float-left mx-auto'>
-											<div className='card-header'>Bedrift på 5 minutter</div>
+										<div className='card bg-light mb-3 card-oppstart float-left mx-auto shadow-lg'>
+											<div className='card-header subtitle-font'>
+												La selskapet vokse
+											</div>
 											<div className='card-body'>
-												<h5 className='card-title'>Light card title</h5>
-												<p className='card-text'>
+												<h5 className='card-title header-font lightText'>
+													O for <u>Oppstart</u>
+												</h5>
+												<p className='card-text darkText'>
 													Some quick example text to build on the card title and
 													make up the bulk of the card's content.
 												</p>

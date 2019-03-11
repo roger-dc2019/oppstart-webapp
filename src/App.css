@@ -5,8 +5,31 @@
 	--mainOrange: #ff5301;
 }
 
+@font-face {
+	font-family: standardFont;
+	src: url(./assets/fonts/Amelia-Basic-Light.ttf);
+}
+
+@font-face {
+	font-family: HeaderFont;
+	src: url(./assets/fonts/Relato-Sans-Bold.ttf);
+}
+
+@font-face {
+	font-family: subtitleFont;
+	src: url(./assets/fonts/Proxima-Nova-Thin.otf);
+}
+
 body {
-	font-family: "", sans-serif !important;
+	font-family: standardFont !important;
+}
+
+.header-font {
+	font-family: headerFont !important;
+}
+
+.subtitle-font {
+	font-family: subtitleFont !important;
 }
 
 /* TEXT */
@@ -27,7 +50,9 @@ body {
 }
 
 .loggInn {
-	background: url("./assets/img/login.jpg");
+	background: url("./assets/img/rocket.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .oppstart {
@@ -51,9 +76,22 @@ body {
 	max-width: 18rem;
 }
 
+.nav-link {
+	color: var(--mainDark) !important;
+}
+
+.nav-link:hover {
+	color: var(--mainOrange) !important;
+}
+
+.card-header {
+	background: var(--darkGreen) !important;
+	color: var(--lightGreen) !important;
+}
+
 /* BUTTONS */
 .start-btn {
-	background: var(--mainDark) !important;
+	background: var(--darkGreen) !important;
 	color: var(--lightGreen) !important;
 	border-radius: 20px !important;
 	z-index: 10;
@@ -61,22 +99,14 @@ body {
 	top: 53vh;
 }
 
-.start-btn:hover {
-	background: var(--darkGreen) !important;
-}
-
-.puls-btn {
-	background: var(--mainDark) !important;
-	color: var(--lightGreen) !important;
-	border-radius: 20px !important;
-	z-index: 10;
-	position: absolute;
-	top: 35vh;
-	left: 95%;
+.start-btn:hover,
+.login-btn:hover {
+	color: var(--mainOrange) !important;
+	text-decoration-line: underline !important;
 }
 
 .login-btn {
-	background: var(--mainDark) !important;
+	background: var(--darkGreen) !important;
 	color: var(--lightGreen) !important;
 	border-radius: 20px !important;
 }
@@ -119,4 +149,22 @@ body {
 	display: inline-block;
 	float: none;
 	padding: 15px;
+}
+
+.fa-minus-circle {
+	color: red !important;
+}
+
+.card-O:hover {
+	color: var(--mainOrange) !important;
+	background: var(--lightGreen);
+}
+
+.hei {
+	color: #ff5301 !important;
+	background: #ff5301 !important;
+}
+
+.logo {
+	padding-top: 200px;
 }

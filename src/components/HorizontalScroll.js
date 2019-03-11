@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 import faker from "faker";
 
+// Assets
+import swiss from "../assets/img/swiss.png";
+import netflix from "../assets/img/netflix.png";
+import amazon from "../assets/img/amazon.png";
+import apple from "../assets/img/apple.png";
+import amd from "../assets/img/amd.png";
+import snap from "../assets/img/snapchat.png";
+import mastercard from "../assets/img/mastercard.png";
+import tesla from "../assets/img/tesla.png";
+
 // Components
 import CompanyCard from "./CompanyCard";
 
@@ -11,80 +21,41 @@ class HorizontalScroll extends Component {
 				<section>
 					<div className='h-60vh'>
 						<div className='py-5 leftPadding'>
-							<h2 className='lightText'>Populære bedrifter</h2>
+							<h2 className='lightText header-font'>Populære bedrifter</h2>
 							<div className='live__scroll'>
 								<div className='row text-center'>
 									<div className='col-2 live__scroll--box'>
+										<CompanyCard companyLogo={tesla} companyName={"Tesla"} />
+									</div>
+									<div className='col-2 live__scroll--box'>
 										<CompanyCard
-											companyLogo={faker.image.nature()}
-											companyName={faker.company.companyName()}
+											companyLogo={swiss}
+											companyName={"SWISS Air Lines"}
 										/>
 									</div>
 									<div className='col-2 live__scroll--box'>
 										<CompanyCard
-											companyLogo={faker.image.transport()}
-											companyName={faker.company.companyName()}
+											companyLogo={netflix}
+											companyName={"Netflix"}
 										/>
 									</div>
 									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.nightlife()}
-											companyName={faker.company.companyName()}
-										/>
+										<CompanyCard companyLogo={snap} companyName={"Snapchat"} />
 									</div>
 									<div className='col-2 live__scroll--box'>
 										<CompanyCard
-											companyLogo={faker.image.food()}
-											companyName={faker.company.companyName()}
+											companyLogo={mastercard}
+											companyName={"Mastercard"}
 										/>
 									</div>
 									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.fashion()}
-											companyName={faker.company.companyName()}
-										/>
+										<CompanyCard companyLogo={amazon} companyName={"Amazon"} />
 									</div>
 									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.city()}
-											companyName={faker.company.companyName()}
-										/>
+										<CompanyCard companyLogo={amd} companyName={"AMD"} />
 									</div>
 									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.cats()}
-											companyName={faker.company.companyName()}
-										/>
-									</div>
-									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.business()}
-											companyName={faker.company.companyName()}
-										/>
-									</div>
-									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.avatar()}
-											companyName={faker.company.companyName()}
-										/>
-									</div>
-									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.animals()}
-											companyName={faker.company.companyName()}
-										/>
-									</div>
-									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.abstract()}
-											companyName={faker.company.companyName()}
-										/>
-									</div>
-									<div className='col-2 live__scroll--box'>
-										<CompanyCard
-											companyLogo={faker.image.image()}
-											companyName={faker.company.companyName()}
-										/>
+										<CompanyCard companyLogo={apple} companyName={"Apple"} />
 									</div>
 								</div>
 							</div>
